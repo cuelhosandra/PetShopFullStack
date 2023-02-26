@@ -1,0 +1,165 @@
+/* detalhes da navbar */
+.flexbox{
+    display: flex;
+    justify-content: center;
+    text-decoration: overline;
+    
+}
+/* distância entre navbar e form */
+.box{
+    padding: 50px
+}
+
+/* botão de voltar ao topo */
+
+#link-topo{
+    text-decoration: none;
+    color: white;
+    background-color: #ffa9a9;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;   
+}
+
+#link-topo:hover{
+    background-color: #7e66ac;
+}
+p {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #ffa9a9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* cabeçalho do formulário */
+  form h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* campos de entrada */
+  form input {    
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+ 
+  }
+  
+  /* botão de enviar */
+  form button {
+    background-color: #31acff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    
+  }
+  
+  /* botão de enviar quando o mouse passa sobre ele */
+  form button:hover {
+    background-color: #7e66ac;
+  }
+  
+ 
+.tabela-container .secao1{
+    padding-top: 400px;
+}
+  /* tabela */
+.tabela-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* células da tabela */
+  table td, table th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* cabeçalho da tabela */
+  table th {
+    background-color: #31acff;
+    color: white;
+  }
+  
+  /* link "Editar" na tabela */
+  table .editar {
+    color: #31acff;
+    text-decoration: none;
+  }
+ 
+  
+  /* link "Excluir" na tabela */
+  table .excluir {
+    color: red;
+    text-decoration: none;
+  }
+  
+  
+/*FOOTER*/
+.page-footer{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: #31acff;
+}
+.page-footer .footer-copyright{
+    padding:6px 0;
+}
+.footer-copyright *{
+    color:#000000;
+    text-decoration: none;
+}
+.footer-copyright a:hover{
+    color:#ffffff;
+}
+.right{
+    float: right;
+}
+@media screen and (max-width: 720px){
+    .page-footer {
+        font-size: 15px;
+        bottom: 11px;
+        padding: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #link-topo{
+        text-decoration: none;
+        color: white;
+        background-color: #d8af97;
+        padding: 20px;
+        border-radius: 10px;
+        position: fixed;
+        right: 10px;
+        bottom: 30px;   
+    }
+
+}
