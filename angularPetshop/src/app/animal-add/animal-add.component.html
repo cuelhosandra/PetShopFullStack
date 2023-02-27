@@ -1,0 +1,33 @@
+<h2>Cadastrar Animal</h2>
+
+<form (submit)="adicionarAnimal()">
+  <div>
+    <label for="numeroCadastro">Número do Cadastro:</label>
+    <input type="number" id="numeroCadastro" name="numeroCadastro" [(ngModel)]="animal.numeroCadastro" required>
+  </div>
+  <div>
+    <label for="nomeAnimal">Nome do Animal:</label>
+    <input type="text" id="nomeAnimal" name="nomeAnimal" [(ngModel)]="animal.nomeAnimal" required>
+  </div>
+  <div>
+    <label for="especieAnimal">Espécie:</label>
+    <input type="text" id="especieAnimal" name="especieAnimal" [(ngModel)]="animal.especieAnimal" required>
+  </div>
+  <div>
+    <label for="racaAnimal">Raça:</label>
+    <input type="text" id="racaAnimal" name="racaAnimal" [(ngModel)]="animal.racaAnimal" required>
+  </div>
+  <div>
+    <label for="alturaAnimal">Altura:</label>
+    <input type="number" id="alturaAnimal" name="alturaAnimal" [(ngModel)]="animal.alturaAnimal" required>
+  </div>
+  <div>
+    <label for="pesoAnimal">Peso:</label>
+    <input type="number" id="pesoAnimal" name="pesoAnimal" [(ngModel)]="animal.pesoAnimal" required>
+  </div>
+  <div>
+    <label for="tipoPelagem">Tipo de Pelagem:</label>
+    <input type="text" id="tipoPelagem" name="tipoPelagem" [(ngModel)]="animal.tipoPelagem" required>
+  </div>
+  <button type="submit">Adicionar Animal</button>
+</form>

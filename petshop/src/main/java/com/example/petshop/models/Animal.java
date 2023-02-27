@@ -16,25 +16,25 @@ public class Animal implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    @Column(nullable = false, unique = true, length = 8)
+    @Column(nullable = false, unique = true, length = 30)
     private String numeroCadastro;
 
     @Column(nullable = false, length = 30)
     private String nomeAnimal;
 
-    @Column(nullable = false, length = 11)
+    @Column(nullable = false, length = 30)
     private String especieAnimal;
 
-    @Column(nullable = false, length = 20)
+    @Column(nullable = false, length = 30)
     private String racaAnimal;
 
-    @Column(nullable = false, length = 5)
+    @Column(nullable = false, length = 30)
     private String alturaAnimal;
 
-    @Column(nullable = false, length = 20)
+    @Column(nullable = false, length = 30)
     private String pesoAnimal;
 
-    @Column(nullable = false, length = 10)
+    @Column(nullable = false, length = 30)
     private String tipoPelagem;
 
     @Column(nullable = false)

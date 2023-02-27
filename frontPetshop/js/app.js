@@ -55,7 +55,10 @@ function adicionarAnimalNaTabela(animal) {
     </td>
   `;
   novaLinha.querySelector(".editar").addEventListener("click", () => mostrarFormularioDeEdicao(animal));
+  
   novaLinha.querySelector(".excluir").addEventListener("click", () => excluirAnimal(animal.id));
+  
+  limparFormulario();
 }
 
 // função para mostrar o formulário de edição com os dados do animal selecionado
@@ -71,6 +74,19 @@ function mostrarFormularioDeEdicao(animal) {
 
 }
 
+//função pra limpar form
+
+function limparFormulario() {
+  document.getElementById('numeroCadastro').value=''; // Limpa o campo
+  document.getElementById('nomeAnimal').value='';
+  document.getElementById('especieAnimal').value='';
+  document.getElementById('alturaAnimal').value='';
+  document.getElementById('tipoPelagem').value='';
+  document.getElementById('pesoAnimal').value='';
+  document.getElementById('racaAnimal').value='';
+
+
+}
 
 // função para atualizar um animal
 async function atualizarAnimal(evento) {
@@ -114,6 +130,7 @@ async function excluirAnimal(id) {
       const tabelaAnimais = document.getElementById('tabela-animais-cadastrados');
       const linha = document.querySelector(`#tabela-animais-cadastrados tr[data-id="${id}"]`);
       tabelaAnimais.removeChild(linha);
+      
     } else {
       throw new Error('Não foi possível excluir o animal');
     }

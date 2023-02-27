@@ -1,0 +1,30 @@
+<h2>Lista de Animais</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Número do Cadastro</th>
+      <th>Nome do Animal</th>
+      <th>Espécie</th>
+      <th>Raça</th>
+      <th>Altura</th>
+      <th>Peso</th>
+      <th>Tipo de Pelagem</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let animal of animais">
+      <td>{{animal.numeroCadastro}}</td>
+      <td>{{animal.nomeAnimal}}</td>
+      <td>{{animal.especieAnimal}}</td>
+      <td>{{animal.racaAnimal}}</td>
+      <td>{{animal.alturaAnimal}}</td>
+      <td>{{animal.pesoAnimal}}</td>
+      <td>{{animal.tipoPelagem}}</td>
+      <td>
+        <button (click)="removerAnimal(animal)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
